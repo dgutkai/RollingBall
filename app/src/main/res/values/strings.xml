@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">BaseProject</string>
+
+    <!-- COMPONENT - BUTTON -->
+    <string name="button_ok">OK</string>
+
+    <!-- COMPONENT - ALERTS -->
+    <string name="alert_permissions_title">Permissions required</string>
+    <string name="alert_permissions_message">Please enable Location permission which is required to scan for
+        LE devices.</string>
+    <string name="alert_no_file_selected_title">No available file</string>
+    <string name="alert_no_file_selected_message">There is no file selected or the selected file cannot be retrieved.
+        <br/>Please choose another file.</string>
+    <string name="alert_not_a_bin_file_title">Not a bin file</string>
+    <string name="alert_not_a_bin_file_message">The selected file is not a bin file. This application only supports
+        using a bin file for the upgrade.<br/>Please choose another file.</string>
+
+
+</resources>
