@@ -60,13 +60,6 @@ public abstract class PermissionsActivity extends AppCompatActivity {
         }
     }
 
-    // When the activity is resumed.
-    @Override
-    protected void onResume() {
-        super.onResume();
-        // every time the activity is resumed, the user can have deactivated the permissions.
-        checkPermissions();
-    }
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -81,6 +74,7 @@ public abstract class PermissionsActivity extends AppCompatActivity {
         if (mPermissions == null) {
             mPermissions = new String[0];
         }
+        checkPermissions();
     }
 
 
@@ -107,8 +101,12 @@ public abstract class PermissionsActivity extends AppCompatActivity {
             for (int i=0; i<mPermissions.length; i++) {
                 if (ActivityCompat.checkSelfPermission(this, mPermissions[i]) != PackageManager.PERMISSION_GRANTED) {
                     notGrantedPermissions.add(mPermissions[i]);
-                    needsMessage = needsMessage
-                            || ActivityCompat.shouldShowRequestPermissionRationale(this, mPermissions[i]);
+                    try {
+                        needsMessage = needsMessage
+                                || ActivityCompat.shouldShowRequestPermissionRationale(this, mPermissions[i]);
+                    }catch (IllegalArgumentException ignored){
+
+                    }
                 }
             }
 
