@@ -1,4 +1,4 @@
-package com.real0168.baseproject
+package com.real0168.rollingball
 
 import org.junit.Test
 

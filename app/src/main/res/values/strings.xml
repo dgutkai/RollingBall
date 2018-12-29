@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">BaseProject</string>
+    <string name="app_name">RollingBall</string>
 
     <!-- COMPONENT - BUTTON -->
     <string name="button_ok">OK</string>

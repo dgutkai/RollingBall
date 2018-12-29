@@ -7,7 +7,7 @@ apply plugin: 'kotlin-android-extensions'
 android {
     compileSdkVersion 28
     defaultConfig {
-        applicationId "com.real0168.baseproject"
+        applicationId "com.real0168.rollingball"
         minSdkVersion 19
         targetSdkVersion 28
         versionCode 1

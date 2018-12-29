@@ -15,7 +15,7 @@ import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 
-import com.real0168.baseproject.R;
+import com.real0168.rollingball.R;
 
 import java.util.ArrayList;
 import java.util.List;
